@@ -238,3 +238,25 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
   background: var(--accent);
 }
+
+/* Landing editorial: less chrome, more room for the work and the message. */
+.scene {
+  padding-block: clamp(6rem, 13vw, 10rem);
+}
+
+.hero {
+  min-height: min(46rem, 92svh);
+  padding-top: clamp(8rem, 15vh, 11rem);
+  padding-bottom: clamp(5rem, 12vh, 8rem);
+}
+
+.hero-title {
+  max-width: 12ch;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 0;
+    padding-top: 9rem;
+  }
+}

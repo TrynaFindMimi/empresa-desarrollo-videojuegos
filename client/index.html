@@ -25,17 +25,6 @@
   <!-- ===== LAYER 0 · 1 · 5 — atmósfera, sin entidad ===== -->
   <canvas id="field" aria-hidden="true"></canvas>
   <div class="scanlines" aria-hidden="true"></div>
-  <div class="hud-frame" aria-hidden="true">
-    <i></i><i></i><i></i><i></i>
-    <span class="hud-roof">MAGIC LEAF STUDIOS · SISTEMA EN LÍNEA</span>
-    <span class="hud-geo">S 16°29′ · W 68°07′</span>
-  </div>
-  <div id="cursor" aria-hidden="true"><span class="cursor-core"></span><span class="cursor-cross"></span></div>
-
-  <div class="scene-state" role="status" aria-live="polite">
-    <span class="scene-state-idx" id="actIndex">01</span>
-    <span class="scene-state-label" id="actLabel">ESTUDIO</span>
-  </div>
 
   <!-- ===== LAYER 5 — navegación ===== -->
   <div class="nav-wrap">
@@ -56,10 +45,10 @@
         <ol class="menu-list">
           <li><a href="#studio" data-nav>ESTUDIO</a></li>
           <li><a href="#vision" data-nav>VISIÓN</a></li>
-          <li><a href="#arsenal" data-nav>ARSENAL</a></li>
-          <li><a href="#objectives" data-nav>OBJETIVOS</a></li>
+          <li><a href="#arsenal" data-nav>SERVICIOS</a></li>
+          <li><a href="#objectives" data-nav>PROCESO</a></li>
         </ol>
-        <a class="btn btn-primary btn-sm" href="#join" data-nav>ÚNETE</a>
+        <a class="btn btn-primary btn-sm" href="#join" data-nav>HABLEMOS</a>
       </nav>
     </header>
   </div>
@@ -75,31 +64,30 @@
     <section class="hero" id="top" data-scene="top" data-label="INTRO">
       <p class="eyebrow reveal" data-reveal>ESTUDIO BOLIVIANO // LA PAZ · SANTA CRUZ · COCHABAMBA</p>
       <h1 class="hero-title">
-        <span class="line reveal" data-reveal style="--d:0">CREAMOS <em>MUNDOS</em></span>
-        <span class="line reveal" data-reveal style="--d:1">EN LOS QUE VALE</span>
-        <span class="line reveal" data-reveal style="--d:2">LA PENA <span class="glitch" data-glitch="PERDERSE">PERDERSE</span>.</span>
+        <span class="line reveal" data-reveal style="--d:0">DESARROLLAMOS <em>VIDEOJUEGOS</em></span>
+        <span class="line reveal" data-reveal style="--d:1">CON IDEAS QUE</span>
+        <span class="line reveal" data-reveal style="--d:2">MERECEN <span>JUGARSE</span>.</span>
       </h1>
       <p class="hero-sub reveal" data-reveal style="--d:3">
-        Somos un estudio boliviano de desarrollo de videojuegos para consolas y PC.
-        Unimos tecnología, creatividad y cultura andina para hacer juegos que se juegan
-        en cualquier latitud.
+        Somos un estudio boliviano que convierte ideas en experiencias jugables para PC
+        y consolas. Diseñamos, construimos y acompañamos cada proyecto desde el primer
+        concepto hasta su lanzamiento.
       </p>
       <div class="hero-cta reveal" data-reveal style="--d:4">
-        <a class="btn btn-primary" href="#studio">▶ CONOCER AL ESTUDIO</a>
-        <a class="btn btn-ghost" href="#arsenal">VER ARSENAL</a>
+        <a class="btn btn-primary" href="#join">INICIAR UN PROYECTO</a>
+        <a class="btn btn-ghost" href="#arsenal">VER SERVICIOS</a>
       </div>
       <div class="hero-readout" aria-hidden="true">
-        <span class="ro"><i class="dot dot-ok"></i>STATUS: DESARROLLANDO</span>
-        <span class="ro"><i class="dot dot-live"></i>PLAYERS: +0</span>
-        <span class="ro">REGION: ANDES — LATAM</span>
+        <span class="ro"><i class="dot dot-ok"></i>ESTUDIO INDEPENDIENTE</span>
+        <span class="ro"><i class="dot dot-live"></i>PC · CONSOLAS</span>
+        <span class="ro">LA PAZ — BOLIVIA</span>
       </div>
     </section>
 
     <!-- Ticker de plataformas (el único marquee de la página) -->
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
-        <span>STEAM</span><i>◆</i><span>EPIC GAMES STORE</span><i>◆</i><span>PLAYSTATION</span><i>◆</i><span>XBOX</span><i>◆</i><span>NINTENDO SWITCH</span><i>◆</i><span>PC</span><i>◆</i>
-        <span>STEAM</span><i>◆</i><span>EPIC GAMES STORE</span><i>◆</i><span>PLAYSTATION</span><i>◆</i><span>XBOX</span><i>◆</i><span>NINTENDO SWITCH</span><i>◆</i><span>PC</span><i>◆</i>
+        <span>GAME DESIGN</span><i>◆</i><span>GAMEPLAY</span><i>◆</i><span>ARTE 2D / 3D</span><i>◆</i><span>PROGRAMACIÓN</span><i>◆</i><span>PRODUCCIÓN</span><i>◆</i>
       </div>
     </div>
 
@@ -107,39 +95,36 @@
     <section class="scene studio" id="studio" data-scene="studio" data-label="ESTUDIO">
       <div class="scene-meta reveal" data-reveal>
         <span class="scene-idx">01</span>
-        <span class="scene-tag">// QUIÉNES SOMOS</span>
+        <span class="scene-tag">// EL ESTUDIO</span>
         <span class="scene-line" aria-hidden="true"></span>
       </div>
 
       <div class="studio-grid">
         <div class="dossier reveal" data-reveal>
           <div class="dossier-head">
-            <span class="dossier-code">FICHA DE ESTUDIO</span>
-            <span class="dossier-cat">STUDIO DOSSIER // MLF-001</span>
+            <span class="dossier-code">SOBRE MAGIC LEAF</span>
+            <span class="dossier-cat">ESTUDIO DE DESARROLLO // 2026</span>
           </div>
-          <h2>Un estudio que nace <em>en los Andes</em> y juega donde sea.</h2>
+          <h2>Un equipo pequeño con ambición <em>internacional</em>.</h2>
           <p>
-            Somos una empresa boliviana, formada por ingenieros de sistemas computacionales,
-            dedicada al desarrollo y comercialización de videojuegos para consolas y PC.
-            Nuestra misión: crear experiencias de entretenimiento únicas.
+            Magic Leaf Studios es una empresa boliviana de desarrollo de videojuegos.
+            Trabajamos con equipos multidisciplinarios para crear productos originales,
+            entretenidos y técnicamente sólidos.
           </p>
           <p>
-            El equipo reúne desarrolladores, diseñadores y artistas apasionados por los
-            videojuegos, que unen tecnología, creatividad e innovación para trascender
-            fronteras y llegar a jugadores de todo el mundo. Valoramos la calidad, el
-            trabajo en equipo, la cercanía con nuestros clientes y la mejora continua
-            de cada producto y servicio.
+            Combinamos dirección creativa, diseño, arte y tecnología para que cada decisión
+            tenga un propósito: construir juegos memorables y una relación de trabajo clara.
           </p>
           <div class="dossier-sign" aria-hidden="true">
-            <span class="sig">— EQUIPO MAGIC LEAF</span>
+            <span class="sig">— HECHO EN BOLIVIA</span>
             <span class="line-blink">▌</span>
           </div>
         </div>
 
         <div class="roles reveal" data-reveal style="--d:1">
           <div class="roles-head">
-            <span>EQUIPO</span>
-            <span>04 ÁREAS · 01 OBJETIVO</span>
+            <span>DISCIPLINAS</span>
+            <span>04 ÁREAS · 01 EQUIPO</span>
           </div>
           <ul class="role-list">
             <li><span class="role-n">01</span><div><b>DESARROLLADORES</b><i>Motores, gameplay, ingeniería</i></div></li>
@@ -174,7 +159,7 @@
     <section class="scene vision" id="vision" data-scene="vision" data-label="VISIÓN">
       <div class="scene-meta reveal" data-reveal>
         <span class="scene-idx">02</span>
-        <span class="scene-tag">// MISIÓN Y VISIÓN</span>
+        <span class="scene-tag">// LO QUE NOS MUEVE</span>
         <span class="scene-line" aria-hidden="true"></span>
       </div>
 
@@ -213,15 +198,15 @@
     <section class="scene arsenal" id="arsenal" data-scene="arsenal" data-label="ARSENAL">
       <div class="scene-meta reveal" data-reveal>
         <span class="scene-idx">03</span>
-        <span class="scene-tag">// ARSENAL TECNOLÓGICO</span>
+        <span class="scene-tag">// SERVICIOS</span>
         <span class="scene-line" aria-hidden="true"></span>
       </div>
 
       <div class="arsenal-head reveal" data-reveal>
-        <h2>Las armas del estudio.</h2>
+        <h2>Todo lo necesario para llevar una idea a pantalla.</h2>
         <p>
-          Cada juego se construye con un stack probado: motores en tiempo real, modelado,
-          arte, audio y las plataformas donde se lanza.
+          Cubrimos las etapas clave del desarrollo con procesos simples, comunicación constante
+          y herramientas que se adaptan a cada proyecto.
         </p>
       </div>
 
@@ -281,16 +266,15 @@
     <section class="scene objectives" id="objectives" data-scene="objectives" data-label="OBJETIVOS">
       <div class="scene-meta reveal" data-reveal>
         <span class="scene-idx">04</span>
-        <span class="scene-tag">// LOG DE MISIONES</span>
+        <span class="scene-tag">// CÓMO TRABAJAMOS</span>
         <span class="scene-line" aria-hidden="true"></span>
       </div>
 
       <div class="quest-head reveal" data-reveal>
-        <h2>Log de misiones.</h2>
+        <h2>Un proceso claro, de la idea al lanzamiento.</h2>
         <p>
-          La misión principal: convertirnos en una de las primeras empresas de
-          desarrollo de videojuegos de Bolivia, con productos de calidad para un
-          público diverso.
+          Definimos objetivos, validamos las decisiones importantes y mantenemos el proyecto
+          avanzando con entregas concretas en cada etapa.
         </p>
       </div>
 
@@ -298,65 +282,65 @@
         <li class="quest reveal" data-reveal>
           <span class="quest-id">Q01</span>
           <div class="quest-body">
-            <b>FUNDAR IDENTIDAD INSTITUCIONAL</b>
-            <i>Misión, visión y valores definidos y registrados.</i>
+            <b>DESCUBRIMIENTO</b>
+            <i>Alineamos la visión, el público y los objetivos del proyecto.</i>
           </div>
-          <span class="chip chip-done">EN ARCHIVO</span>
+          <span class="chip chip-done">PRIMERA ETAPA</span>
         </li>
         <li class="quest reveal" data-reveal>
           <span class="quest-id">Q02</span>
           <div class="quest-body">
-            <b>PLANIFICAR ALCANCES</b>
-            <i>Presentación formal de la empresa y su plan de proyecto.</i>
+            <b>DISEÑO DEL JUEGO</b>
+            <i>Convertimos la idea en una experiencia clara y jugable.</i>
           </div>
-          <span class="chip chip-done">EN ARCHIVO</span>
+            <span class="chip chip-done">EN MARCHA</span>
         </li>
         <li class="quest reveal" data-reveal>
           <span class="quest-id">Q03</span>
           <div class="quest-body">
-            <b>MANUALES POR ÁREA</b>
-            <i>Manuales de funciones y actividades para cada área de la organización.</i>
+            <b>PRODUCCIÓN</b>
+            <i>Arte, código y contenido se integran en entregas iterativas.</i>
           </div>
-          <span class="chip chip-done">EN ARCHIVO</span>
+            <span class="chip chip-done">EN MARCHA</span>
         </li>
         <li class="quest reveal" data-reveal>
           <span class="quest-id">Q04</span>
           <div class="quest-body">
-            <b>FLUJOS DE TALENTO</b>
-            <i>Selección, contratación e incorporación del personal.</i>
+            <b>PRUEBAS Y AJUSTES</b>
+            <i>Jugamos, medimos y refinamos hasta encontrar el ritmo correcto.</i>
           </div>
-          <span class="chip chip-warn">EN EJECUCIÓN</span>
+            <span class="chip chip-warn">ITERATIVO</span>
         </li>
         <li class="quest reveal" data-reveal>
           <span class="quest-id">Q05</span>
           <div class="quest-body">
-            <b>MODELO DE OPERACIÓN</b>
-            <i>Jerarquía organizacional y funcionamiento interno.</i>
+            <b>CONTROL DE CALIDAD</b>
+            <i>Revisamos el producto para llegar a una experiencia consistente.</i>
           </div>
-          <span class="chip chip-done">EN ARCHIVO</span>
+            <span class="chip chip-done">EN MARCHA</span>
         </li>
         <li class="quest reveal" data-reveal>
           <span class="quest-id">Q06</span>
           <div class="quest-body">
-            <b>COSTOS Y CALIDAD</b>
-            <i>Evaluar costos y un sistema de control que prevenga contingencias.</i>
+            <b>LANZAMIENTO</b>
+            <i>Preparamos el producto y sus materiales para llegar a jugadores.</i>
           </div>
-          <span class="chip chip-warn">EN EJECUCIÓN</span>
+            <span class="chip chip-warn">PLANIFICADO</span>
         </li>
         <li class="quest reveal" data-reveal>
           <span class="quest-id">Q07</span>
           <div class="quest-body">
-            <b>PLAN DE SOSTENIBILIDAD</b>
-            <i>Continuidad y crecimiento de la empresa a largo plazo.</i>
+            <b>EVOLUCIÓN</b>
+            <i>Aprendemos del lanzamiento y seguimos mejorando el juego.</i>
           </div>
-          <span class="chip chip-warn">PENDIENTE</span>
+            <span class="chip chip-warn">CONTINUO</span>
         </li>
       </ul>
 
       <div class="quest-exp reveal" data-reveal>
-        <span>REQUISITO PARA COMPLETAR:&nbsp;</span>
-        <b>100% DE OBJETIVOS ESPECÍFICOS</b>
-        <span class="xp">◆◆◇◇◇◇◇ 28%</span>
+        <span>EN CADA ETAPA:&nbsp;</span>
+        <b>CLARIDAD, CALIDAD Y COMUNICACIÓN</b>
+        <span class="xp">01 — 06</span>
       </div>
     </section>
 
@@ -364,23 +348,23 @@
     <section class="scene join" id="join" data-scene="join" data-label="ÚNETE">
       <div class="scene-meta reveal" data-reveal>
         <span class="scene-idx">05</span>
-        <span class="scene-tag">// MULTIJUGADOR</span>
+        <span class="scene-tag">// HABLEMOS</span>
         <span class="scene-line" aria-hidden="true"></span>
       </div>
 
       <div class="join-inner">
-        <p class="eyebrow reveal" data-reveal>PARTIDA ABIERTA // 4 PLAZAS LIBRES</p>
+        <p class="eyebrow reveal" data-reveal>¿TIENES UN PROYECTO?</p>
         <h2 class="join-title reveal" data-reveal style="--d:1">
-          ¿Creas mundos?<br />
-          <em>Únete a la partida.</em>
+          Hagamos algo<br />
+          <em>que valga la pena jugar.</em>
         </h2>
         <p class="join-sub reveal" data-reveal style="--d:2">
-          Somos un estudio joven buscando desarrolladores, artistas, diseñadores y
-          gente que ama los videojuegos. Escribinos: el mundo aún no está terminado.
+          Cuéntanos qué quieres construir, en qué etapa estás y qué necesitas del equipo.
+          Nos pondremos en contacto para entender el proyecto y encontrar la mejor forma de colaborar.
         </p>
         <div class="join-cta reveal" data-reveal style="--d:3">
-          <a class="btn btn-primary btn-lg" href="mailto:hola@magicleafstudios.bo">▶ ENVIAR SEÑAL</a>
-          <a class="btn btn-ghost" href="#studio">VOLVER AL INICIO</a>
+          <a class="btn btn-primary btn-lg" href="mailto:hola@magicleafstudios.bo">HABLEMOS DEL PROYECTO</a>
+          <a class="btn btn-ghost" href="#top">VOLVER AL INICIO</a>
         </div>
         <ul class="socials reveal" data-reveal style="--d:4" aria-label="Redes sociales">
           <li><a href="#" data-social>INSTAGRAM</a></li>
@@ -397,7 +381,7 @@
       <span class="footer-brand">MAGIC LEAF STUDIOS</span>
       <span class="footer-meta">© 2026 · LA PAZ — BOLIVIA</span>
     </div>
-    <p class="footer-line">HECHO CON &lt;3 EN LOS ANDES — PARA JUGADORES DE TODAS LAS ZONAS HORARIAS.</p>
+      <p class="footer-line">HECHO EN BOLIVIA — DISEÑADO PARA JUGADORES DE TODO EL MUNDO.</p>
   </footer>
 
   <script src="js/config.js"></script>

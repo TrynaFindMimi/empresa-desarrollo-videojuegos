@@ -551,3 +551,42 @@
   .quest .chip { grid-column: 2; justify-self: start; }
   .stats { grid-template-columns: 1fr; }
 }
+
+/* Reduce the game-console treatment in favour of a confident studio presentation. */
+.scene-meta {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.scene-tag {
+  letter-spacing: 0.16em;
+}
+
+.dossier,
+.roles,
+.panel,
+.quest,
+.arsenal-grid,
+.stats {
+  border-radius: var(--r-md);
+}
+
+.dossier::before {
+  display: none;
+}
+
+.dossier h2,
+.panel h2,
+.quest-head h2,
+.arsenal-head h2 {
+  letter-spacing: -0.035em;
+}
+
+.weapon-wide {
+  grid-column: span 1;
+}
+
+.scene[data-dim="true"],
+.hero[data-dim="true"] {
+  opacity: 1;
+  transform: none;
+}

@@ -387,3 +387,42 @@ html.cursor-on a, html.cursor-on .btn { cursor: none; }
   .hud-geo { display: block; }
   .rail { display: none; }
 }
+
+/* The brand uses the interface as a frame, not as a game HUD. */
+.hud-frame,
+.scanlines,
+.rail,
+.scene-state,
+#cursor {
+  display: none;
+}
+
+.nav-wrap {
+  top: 0;
+  padding-top: 1rem;
+}
+
+.nav {
+  border-radius: var(--r-lg);
+  padding: 0.8rem 0.95rem 0.8rem 1.1rem;
+  background: var(--base);
+}
+
+.ticker {
+  background: var(--surface-1);
+}
+
+.ticker-track {
+  animation: none;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-inline: 1.25rem;
+  gap: 1rem 1.8rem;
+}
+
+@media (max-width: 760px) {
+  .nav-wrap {
+    padding-inline: 1rem;
+  }
+}
