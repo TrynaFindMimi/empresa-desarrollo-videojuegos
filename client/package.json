@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "live-server --port=5173 --no-browser"
+    "dev": "live-server --port=5173 --no-browser",
+    "start": "npm run dev"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
