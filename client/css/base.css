@@ -1,0 +1,240 @@
+/* ============================================================================
+   BASE — reset, tipografía, ritmos de layout y componentes estructurales.
+   Todo color, radio, duración y curva salen de tokens.css.
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  background: var(--base);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--accent-glow);
+}
+
+h1, h2, h3, h4, p, ul, dl, dd, figure {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
+  max-width: 22em;
+}
+
+h2 em, h1 em {
+  font-style: normal;
+  color: var(--accent-bright);
+}
+
+p {
+  color: var(--ink-muted);
+  max-width: 60ch;
+}
+
+i {
+  font-style: normal;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, svg {
+  display: block;
+}
+
+/* ---- Accesibilidad: salto de navegación ---- */
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 0.75rem;
+  z-index: 80;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-data);
+  font-size: 0.8rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--r-sm);
+  transition: top var(--dur-fast) var(--glob-ease);
+}
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+/* ---- Campos semi-transparentes para la atmósfera (layer 0) ---- */
+#field {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-field);
+  pointer-events: none;
+}
+
+/* ---- Layout de secciones ---- */
+main {
+  position: relative;
+  z-index: var(--z-content);
+}
+
+.scene {
+  position: relative;
+  padding-block: var(--section);
+  padding-inline: clamp(1.25rem, 5vw, 4.5rem);
+  max-width: 84rem;
+  margin-inline: auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: clamp(1.25rem, 5vw, 4.5rem);
+  max-width: 84rem;
+  margin-inline: auto;
+  gap: 1.4rem;
+}
+
+/* ---- Botones ---- */
+.btn {
+  --btn-pad-y: 0.72rem;
+  --btn-pad-x: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-data);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+  border-radius: var(--r-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color var(--dur-base) var(--glob-ease),
+    border-color var(--dur-base) var(--glob-ease),
+    color var(--dur-base) var(--glob-ease),
+    transform var(--dur-press) var(--glob-ease),
+    box-shadow var(--dur-base) var(--glob-ease);
+  user-select: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.btn-primary:hover {
+  background: var(--accent-bright);
+  box-shadow: var(--signal-glow);
+}
+.btn-primary:active {
+  background: var(--accent-dim);
+  color: var(--ink);
+  transform: translateY(1px);
+}
+
+.btn-ghost {
+  border-color: var(--hairline-strong);
+  color: var(--ink-muted);
+  background: transparent;
+}
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent-bright);
+  box-shadow: var(--accent-glow);
+}
+.btn-ghost:active {
+  transform: translateY(1px);
+}
+
+.btn-sm {
+  --btn-pad-y: 0.5rem;
+  --btn-pad-x: 1rem;
+  font-size: 0.74rem;
+}
+.btn-lg {
+  --btn-pad-y: 0.95rem;
+  --btn-pad-x: 1.9rem;
+  font-size: 0.9rem;
+}
+
+/* ---- Eyebrows (telemetría mono) ---- */
+.eyebrow {
+  font-family: var(--font-data);
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  color: var(--accent-bright);
+}
+
+/* ---- Puntos de estado (jamás color por sí solo) ---- */
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 0.45rem;
+  vertical-align: 2px;
+  position: relative;
+}
+.dot-ok { background: var(--ok); }
+.dot-live { background: var(--accent); }
+.dot-ok::after { content: "OK"; font-family: var(--font-data); font-size: 0; }
+.dot-live::after { content: "LIVE"; font-size: 0; }
+
+/* ---- Scrollbar de la página (detalle de consola) ---- */
+html {
+  scrollbar-color: var(--hairline-strong) var(--base);
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: var(--base);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--hairline-strong);
+  border: 3px solid var(--base);
+  border-radius: var(--r-pill);
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}

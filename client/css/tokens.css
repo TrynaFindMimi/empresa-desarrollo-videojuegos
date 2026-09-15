@@ -1,0 +1,85 @@
+/* ============================================================================
+   MAGIC LEAF STUDIOS — Magic Leaf Studios: capa de tokens.
+   Token layer base: SHELEG "instrument-console" (copiada verbatim).
+   La capa de marca añade sólo lo que el pack deja abierto (tipografía y
+   utilidades propias); no inventa colores, radios ni curvas fuera del pack.
+   ========================================================================== */
+
+/* ---- SHELEG Design — Instrument Console token layer. ---- */
+:root {
+  --base: #05070a;
+  --surface-1: #0a0e14;
+  --surface-2: #10151d;
+  --surface-3: #161c26;
+  --hairline: #1e2630;
+  --hairline-strong: #2b3542;
+  --ink: #eef2f7;
+  --ink-muted: #9aa7b6;
+  --ink-faint: #5f6b7a;
+  --accent: #3392ff;
+  --accent-dim: #1f5fb0;
+  --accent-bright: #6bb3ff;
+  --accent-ink: #0a0e14;
+
+  --accent-glow: rgba(51, 146, 255, 0.18);
+
+  --ok: #46d39a;
+  --warn: #e0a030;
+  --danger: #f4526b;
+  --info: var(--accent);
+
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 14px;
+  --r-pill: 999px;
+
+  --signal-glow: 0 0 0 1px rgba(51, 146, 255, 0.4),
+    0 8px 30px rgba(51, 146, 255, 0.18);
+
+  --motion-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.18s;
+  --dur-base: 0.32s;
+  --dur-slow: 0.55s;
+  --dur-epic: 0.8s;
+  --stagger: 0.07s;
+  --dur-press: 0.16s;
+
+  --section: clamp(9rem, 24svh, 20rem);
+
+  --font-ui: var(--font-geist-sans, "Geist"), system-ui, sans-serif;
+  --font-data: var(--font-geist-mono, "Geist Mono"), ui-monospace, monospace;
+
+  background-color: var(--base);
+  color: var(--ink);
+  color-scheme: dark;
+
+  --bg: var(--base);
+}
+
+/* ---- Capa de marca (lo que el pack deja abierto) -------------------------
+   Nada aquí contradice al pack: sólo tipografías de despliegue, la escala de
+   caja HUD y la jerarquía z-index, documentada por capas (SURFACE_COMPOSITION). */
+:root {
+  --font-display: var(--font-ui);
+
+  --z-field: 0;
+  --z-content: 1;
+  --z-chrome: 40;     /* scanlines + frame HUD */
+  --z-rail: 50;
+  --z-state: 45;
+  --z-nav: 60;
+  --z-cursor: 70;
+
+  --glob-ease: var(--motion-ease);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0s;
+    --dur-press: 0s;
+    --dur-base: 0s;
+    --dur-slow: 0s;
+    --dur-epic: 0s;
+    --stagger: 0s;
+  }
+}

@@ -1,0 +1,152 @@
+/* ============================================================================
+   MOTION — entradas temáticas por acto, micro-interacciones y el contrato
+   de reduced-motion. Todo curva/dur sale de tokens (--glob-ease, --dur-*).
+   Regla de oro: las entradas nunca ocultan contenido; son una mejora.
+   ========================================================================== */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity var(--dur-epic) var(--glob-ease) calc(var(--d, 0) * var(--stagger)),
+    transform var(--dur-slow) var(--glob-ease) calc(var(--d, 0) * var(--stagger));
+  will-change: opacity, transform;
+}
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Física por acto: el hero "sube y enfoca", los marcos "se recortan",
+   los paneles "encajan mecánico" (Lock), las listas "cascada" (Stagger). */
+.hero-title .line,
+.hero-sub,
+.hero .eyebrow {
+  transform: translateY(34px);
+}
+.hero-title .line.is-in {
+  transform: none;
+  opacity: 1;
+  animation: focus-in var(--dur-epic) var(--glob-ease) backwards;
+  animation-delay: calc(var(--d, 0) * var(--stagger));
+}
+@keyframes focus-in {
+  from { opacity: 0; filter: blur(6px); }
+  to { opacity: 1; filter: blur(0); }
+}
+
+.scene-meta {
+  clip-path: inset(0 100% 0 0);
+}
+.scene-meta.is-in {
+  clip-path: inset(0 0 0 0);
+  opacity: 1;
+}
+
+.hero-sub { max-width: 58ch; }
+.hero-cta { will-change: transform, opacity; }
+
+/* El dossier/panel entra como pieza mecanizada */
+.dossier,
+.panel {
+  clip-path: inset(0 0 100% 0);
+  transform: none;
+}
+.dossier.is-in,
+.panel.is-in {
+  clip-path: inset(0 0 0 0);
+  opacity: 1;
+}
+
+/* Las filas del log son StaggerItem: cascada por --d */
+.quest { will-change: transform, opacity; }
+
+/* ---- Micro-interacciones ---- */
+.glitch { transition: color var(--dur-base) var(--glob-ease); }
+.glitch::before,
+.glitch::after {
+  content: attr(data-glitch);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---- Hover del glitch: un recorte de haz en cada dedo del slice ---- */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .glitch:hover { color: var(--accent-bright); }
+  .glitch:hover::before {
+    opacity: 0.85;
+    color: var(--accent);
+    animation: glitch-slice-a 0.9s steps(1) infinite;
+  }
+  .glitch:hover::after {
+    opacity: 0.85;
+    color: var(--danger);
+    animation: glitch-slice-b 0.9s steps(1) infinite;
+  }
+
+  /* El brand respira con su señal */
+  .brand:hover .brand-sub { color: var(--accent-bright); }
+
+  /* Tarjetas de arsenal: el icono se enciende al sobrevolar */
+  .weap:hover .weap-icon {
+    filter: drop-shadow(0 0 6px var(--accent-glow));
+  }
+}
+
+/* ---- Ticker: sólo si hay movimiento permitido ---- */
+@media (prefers-reduced-motion: no-preference) {
+  .line-blink { animation: blink 1.1s steps(2) infinite; }
+}
+
+/* ============================================================================
+   CONTRATO REDUCED-MOTION — los motivos se entregan en su estado final.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* Las entradas aparecen directas, ya visibles */
+  [data-reveal],
+  .hero-title .line,
+  .hero-sub,
+  .hero .eyebrow,
+  .hero-cta,
+  .scene-meta,
+  .dossier,
+  .panel {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Indicadores estáticos */
+  .line-blink,
+  .ticker-track {
+    animation: none !important;
+  }
+  .ticker-track { transform: none; }
+  .ticker { overflow-x: auto; }
+
+  .glitch::before,
+  .glitch::after { animation: none !important; opacity: 0 !important; }
+
+  /* El spotlight no atenúa nada: no se aplica efecto de dim sin movimiento */
+  .scene[data-dim="true"],
+  .hero[data-dim="true"] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  /* Sin desplazamientos de hover: quedan sólos los cambios de color */
+  .quest:hover,
+  .weap:hover,
+  .role-list li:hover {
+    transform: none !important;
+  }
+}
