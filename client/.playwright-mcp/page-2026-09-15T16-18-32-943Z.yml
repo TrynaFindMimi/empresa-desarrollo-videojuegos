@@ -1,0 +1,246 @@
+- generic [active] [ref=f28e1]:
+  - link "Saltar al contenido" [ref=f28e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f28e4]:
+    - link "Magic Leaf Studios — inicio" [ref=f28e5] [cursor=pointer]:
+      - /url: "#top"
+      - generic [ref=f28e8]:
+        - text: MAGIC LEAF
+        - generic [ref=f28e9]: STUDIOS
+    - button "Abrir menú" [ref=f28e10] [cursor=pointer]
+  - main [ref=f28e13]:
+    - generic [ref=f28e14]:
+      - paragraph [ref=f28e15]: ESTUDIO BOLIVIANO // LA PAZ · SANTA CRUZ · COCHABAMBA
+      - heading "DESARROLLAMOS VIDEOJUEGOS CON IDEAS QUE MERECEN JUGARSE." [level=1] [ref=f28e16]:
+        - generic [ref=f28e17]:
+          - text: DESARROLLAMOS
+          - emphasis [ref=f28e18]: VIDEOJUEGOS
+        - generic [ref=f28e19]: CON IDEAS QUE
+        - generic [ref=f28e20]: MERECEN JUGARSE.
+      - paragraph [ref=f28e21]: Somos un estudio boliviano que convierte ideas en experiencias jugables para PC y consolas. Diseñamos, construimos y acompañamos cada proyecto desde el primer concepto hasta su lanzamiento.
+      - generic [ref=f28e22]:
+        - link "INICIAR UN PROYECTO" [ref=f28e23] [cursor=pointer]:
+          - /url: "#join"
+        - link "VER SERVICIOS" [ref=f28e24] [cursor=pointer]:
+          - /url: "#arsenal"
+      - generic [aria-hidden] [ref=f28e25]:
+        - generic [ref=f28e26]:
+          - generic [ref=f28e27]: OK
+          - text: ESTUDIO INDEPENDIENTE
+        - generic [ref=f28e28]:
+          - generic [ref=f28e29]: LIVE
+          - text: PC · CONSOLAS
+        - generic [ref=f28e30]: LA PAZ — BOLIVIA
+    - generic [ref=f28e32]:
+      - generic [ref=f28e33]: GAME DESIGN
+      - generic [ref=f28e34]: ◆
+      - generic [ref=f28e35]: GAMEPLAY
+      - generic [ref=f28e36]: ◆
+      - generic [ref=f28e37]: ARTE 2D / 3D
+      - generic [ref=f28e38]: ◆
+      - generic [ref=f28e39]: PROGRAMACIÓN
+      - generic [ref=f28e40]: ◆
+      - generic [ref=f28e41]: PRODUCCIÓN
+      - generic [ref=f28e42]: ◆
+    - generic [ref=f28e43]:
+      - generic [ref=f28e44]:
+        - generic [ref=f28e45]: 01 /
+        - generic [ref=f28e46]: // EL ESTUDIO
+      - generic [ref=f28e48]:
+        - generic [ref=f28e49]:
+          - generic [ref=f28e50]:
+            - generic [ref=f28e51]: SOBRE MAGIC LEAF
+            - generic [ref=f28e52]: ESTUDIO DE DESARROLLO // 2026
+          - heading [level=2] [ref=f28e53]:
+            - text: Un equipo pequeño con ambición
+            - emphasis [ref=f28e54]: internacional
+            - text: .
+          - paragraph [ref=f28e55]: Magic Leaf Studios es una empresa boliviana de desarrollo de videojuegos. Trabajamos con equipos multidisciplinarios para crear productos originales, entretenidos y técnicamente sólidos.
+          - paragraph [ref=f28e56]: "Combinamos dirección creativa, diseño, arte y tecnología para que cada decisión tenga un propósito: construir juegos memorables y una relación de trabajo clara."
+          - generic [ref=f28e57]:
+            - generic [ref=f28e58]: FORMA JURÍDICA PROPUESTA
+            - strong [ref=f28e59]: S.R.L. · Sociedad de Responsabilidad Limitada
+            - paragraph [ref=f28e60]: "Para una empresa boliviana con varios socios, esta es la opción de referencia más cercana a una LLC: limita la responsabilidad al aporte de cada socio y mantiene una estructura sencilla. La constitución debe validarse con asesoría legal local."
+          - generic [aria-hidden] [ref=f28e61]:
+            - generic [ref=f28e62]: — HECHO EN BOLIVIA
+            - generic [ref=f28e63]: ▌
+        - generic [ref=f28e64]:
+          - generic [ref=f28e65]:
+            - generic [ref=f28e66]: DISCIPLINAS
+            - generic [ref=f28e67]: 04 ÁREAS · 01 EQUIPO
+          - list [ref=f28e68]:
+            - listitem [ref=f28e69]:
+              - generic [ref=f28e70]: "01"
+              - generic [ref=f28e71]:
+                - generic [ref=f28e72]: DESARROLLADORES
+                - generic [ref=f28e73]: Motores, gameplay, ingeniería
+            - listitem [ref=f28e74]:
+              - generic [ref=f28e75]: "02"
+              - generic [ref=f28e76]:
+                - generic [ref=f28e77]: DISEÑADORES
+                - generic [ref=f28e78]: Narrativa, niveles, jugabilidad
+            - listitem [ref=f28e79]:
+              - generic [ref=f28e80]: "03"
+              - generic [ref=f28e81]:
+                - generic [ref=f28e82]: ARTISTAS
+                - generic [ref=f28e83]: Mundos, personajes, audio
+            - listitem [ref=f28e84]:
+              - generic [ref=f28e85]: "04"
+              - generic [ref=f28e86]:
+                - generic [ref=f28e87]: GESTIÓN
+                - generic [ref=f28e88]: Calidad, clientes, mejora continua
+      - generic [ref=f28e89]:
+        - generic [ref=f28e90]:
+          - term [ref=f28e91]: 0%
+          - definition [ref=f28e92]: BOLIVIANO— ingeniería nacional
+        - generic [ref=f28e93]:
+          - term [ref=f28e94]: "0"
+          - definition [ref=f28e95]: CIUDADES PILOTO— LP · SCZ · CBB
+        - generic [ref=f28e96]:
+          - term [ref=f28e97]: "0"
+          - definition [ref=f28e98]: MOTORES GRÁFICOS— Unity · Unreal
+        - generic [ref=f28e99]:
+          - term [ref=f28e100]: "0"
+          - definition [ref=f28e101]: SUPERFICIES DE LANZAMIENTO— PC + 3 consolas
+    - generic [ref=f28e102]:
+      - generic [ref=f28e103]:
+        - generic [ref=f28e104]: 02 /
+        - generic [ref=f28e105]: // LO QUE NOS MUEVE
+      - generic [ref=f28e107]:
+        - article [ref=f28e108]:
+          - generic [ref=f28e109]:
+            - generic [ref=f28e110]: MSN
+            - generic [ref=f28e111]:
+              - generic [ref=f28e112]: OK
+              - text: ACTIVA
+          - heading "Misión" [level=2] [ref=f28e113]
+          - paragraph [ref=f28e114]:
+            - text: Desarrollar experiencias de juego que no solo entretengan, sino que también fomenten la
+            - emphasis [ref=f28e115]: conexión y la comunidad
+            - text: entre jugadores de diversas culturas y ubicaciones.
+          - generic [ref=f28e116]: OBJECTIVE // CONEXIÓN > ENTRETENIMIENTO
+        - article [ref=f28e117]:
+          - generic [ref=f28e118]:
+            - generic [ref=f28e119]: VSN
+            - generic [ref=f28e120]:
+              - generic [ref=f28e121]: LIVE
+              - text: EN RUTA
+          - heading "Visión" [level=2] [ref=f28e122]
+          - paragraph [ref=f28e123]:
+            - text: Ser pioneros en la creación de
+            - emphasis [ref=f28e124]: mundos virtuales
+            - text: que trasciendan fronteras y ofrezcan inmersión total. Llegar a Latinoamérica y al mundo con los juegos más actualizados y la mejor comodidad y seguridad de Bolivia.
+          - generic [ref=f28e125]: TARGET // LATAM → MUNDO
+    - generic [ref=f28e126]:
+      - generic [ref=f28e127]:
+        - generic [ref=f28e128]: 03 /
+        - generic [ref=f28e129]: // SERVICIOS
+      - generic [ref=f28e131]:
+        - heading "Todo lo necesario para llevar una idea a pantalla." [level=2] [ref=f28e132]
+        - paragraph [ref=f28e133]: Cubrimos las etapas clave del desarrollo con procesos simples, comunicación constante y herramientas que se adaptan a cada proyecto.
+      - generic [ref=f28e134]:
+        - generic [ref=f28e135]:
+          - heading "MOTORES" [level=3] [ref=f28e140]
+          - paragraph [ref=f28e141]: Unity · Unreal Engine
+        - generic [ref=f28e144]:
+          - heading "MODELADO 3D" [level=3] [ref=f28e149]
+          - paragraph [ref=f28e150]: Blender · Maya · ZBrush
+        - generic [ref=f28e153]:
+          - heading "ARTE 2D" [level=3] [ref=f28e158]
+          - paragraph [ref=f28e159]: Photoshop · Illustrator
+        - generic [ref=f28e162]:
+          - heading "AUDIO" [level=3] [ref=f28e166]
+          - paragraph [ref=f28e167]: Adobe Audition · Reaper
+        - generic [ref=f28e170]:
+          - heading "GESTIÓN DEL PROYECTO" [level=3] [ref=f28e175]
+          - paragraph [ref=f28e176]: Git · Notion · Trello · Teams · Discord
+        - generic [ref=f28e179]:
+          - heading "DISTRIBUCIÓN" [level=3] [ref=f28e183]
+          - paragraph [ref=f28e184]: Steam · Epic Games Store · Tiendas de consola
+    - generic [ref=f28e187]:
+      - generic [ref=f28e188]:
+        - generic [ref=f28e189]: 04 /
+        - generic [ref=f28e190]: // CÓMO TRABAJAMOS
+      - generic [ref=f28e192]:
+        - heading "Un proceso claro, de la idea al lanzamiento." [level=2] [ref=f28e193]
+        - paragraph [ref=f28e194]: Definimos objetivos, validamos las decisiones importantes y mantenemos el proyecto avanzando con entregas concretas en cada etapa.
+      - list "Objetivos específicos del estudio" [ref=f28e195]:
+        - listitem [ref=f28e196]:
+          - generic [ref=f28e197]: Q01
+          - generic [ref=f28e198]:
+            - generic [ref=f28e199]: DESCUBRIMIENTO
+            - generic [ref=f28e200]: Alineamos la visión, el público y los objetivos del proyecto.
+          - generic [ref=f28e201]: ✔ PRIMERA ETAPA
+        - listitem [ref=f28e202]:
+          - generic [ref=f28e203]: Q02
+          - generic [ref=f28e204]:
+            - generic [ref=f28e205]: DISEÑO DEL JUEGO
+            - generic [ref=f28e206]: Convertimos la idea en una experiencia clara y jugable.
+          - generic [ref=f28e207]: ✔ EN MARCHA
+        - listitem [ref=f28e208]:
+          - generic [ref=f28e209]: Q03
+          - generic [ref=f28e210]:
+            - generic [ref=f28e211]: PRODUCCIÓN
+            - generic [ref=f28e212]: Arte, código y contenido se integran en entregas iterativas.
+          - generic [ref=f28e213]: ✔ EN MARCHA
+        - listitem [ref=f28e214]:
+          - generic [ref=f28e215]: Q04
+          - generic [ref=f28e216]:
+            - generic [ref=f28e217]: PRUEBAS Y AJUSTES
+            - generic [ref=f28e218]: Jugamos, medimos y refinamos hasta encontrar el ritmo correcto.
+          - generic [ref=f28e219]: ◍ ITERATIVO
+        - listitem [ref=f28e220]:
+          - generic [ref=f28e221]: Q05
+          - generic [ref=f28e222]:
+            - generic [ref=f28e223]: CONTROL DE CALIDAD
+            - generic [ref=f28e224]: Revisamos el producto para llegar a una experiencia consistente.
+          - generic [ref=f28e225]: ✔ EN MARCHA
+        - listitem [ref=f28e226]:
+          - generic [ref=f28e227]: Q06
+          - generic [ref=f28e228]:
+            - generic [ref=f28e229]: LANZAMIENTO
+            - generic [ref=f28e230]: Preparamos el producto y sus materiales para llegar a jugadores.
+          - generic [ref=f28e231]: ◍ PLANIFICADO
+        - listitem [ref=f28e232]:
+          - generic [ref=f28e233]: Q07
+          - generic [ref=f28e234]:
+            - generic [ref=f28e235]: EVOLUCIÓN
+            - generic [ref=f28e236]: Aprendemos del lanzamiento y seguimos mejorando el juego.
+          - generic [ref=f28e237]: ◍ CONTINUO
+      - generic [ref=f28e238]:
+        - generic [ref=f28e239]: "EN CADA ETAPA:"
+        - generic [ref=f28e240]: CLARIDAD, CALIDAD Y COMUNICACIÓN
+        - generic [ref=f28e241]: 01 — 06
+    - generic [ref=f28e242]:
+      - generic [ref=f28e243]:
+        - generic [ref=f28e244]: 05 /
+        - generic [ref=f28e245]: // HABLEMOS
+      - generic [ref=f28e247]:
+        - paragraph [ref=f28e248]: ¿TIENES UN PROYECTO?
+        - heading [level=2] [ref=f28e249]:
+          - text: Hagamos algo
+          - emphasis [ref=f28e250]: que valga la pena jugar.
+        - paragraph [ref=f28e251]: Cuéntanos qué quieres construir, en qué etapa estás y qué necesitas del equipo. Nos pondremos en contacto para entender el proyecto y encontrar la mejor forma de colaborar.
+        - generic [ref=f28e252]:
+          - link "HABLEMOS DEL PROYECTO" [ref=f28e253] [cursor=pointer]:
+            - /url: mailto:hola@magicleafstudios.bo
+          - link "VOLVER AL INICIO" [ref=f28e254] [cursor=pointer]:
+            - /url: "#top"
+        - list "Redes sociales" [ref=f28e255]:
+          - listitem [ref=f28e256]:
+            - link "INSTAGRAM↗" [ref=f28e257] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f28e258]:
+            - link "TIKTOK↗" [ref=f28e259] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f28e260]:
+            - link "YOUTUBE↗" [ref=f28e261] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f28e262]:
+            - link "X↗" [ref=f28e263] [cursor=pointer]:
+              - /url: "#"
+  - contentinfo [ref=f28e264]:
+    - generic [ref=f28e265]:
+      - generic [ref=f28e266]: MAGIC LEAF STUDIOS
+      - generic [ref=f28e267]: © 2026 · LA PAZ — BOLIVIA
+    - paragraph [ref=f28e268]: HECHO EN BOLIVIA — DISEÑADO PARA JUGADORES DE TODO EL MUNDO.

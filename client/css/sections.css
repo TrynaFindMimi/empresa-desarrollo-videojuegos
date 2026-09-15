@@ -157,6 +157,34 @@
   margin-bottom: 1.2rem;
   color: var(--ink-muted);
 }
+
+.company-structure {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border-left: 2px solid var(--accent);
+  background: var(--surface-2);
+}
+
+.company-structure-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-data);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: var(--accent-bright);
+}
+
+.company-structure strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.company-structure p {
+  margin: 0;
+  font-size: 0.78rem;
+}
 .dossier p strong, .dossier p em { font-style: normal; color: var(--ink); }
 .dossier-sign {
   margin-top: 1.6rem;
